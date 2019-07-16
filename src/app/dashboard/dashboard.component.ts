@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 // import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
 
-export class Hero {
+export interface Hero {
   id: number;
   name: string;
 }
@@ -11,6 +11,7 @@ export class Hero {
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
+
 export class DashboardComponent implements OnInit {
   heroes: Hero[] = [];
 
