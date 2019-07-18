@@ -14,6 +14,7 @@ export interface Hero {
 })
 export class HeroDetailComponent implements OnInit {
   @Input() hero: Hero;
+  public text: string | null = '';
 
   constructor(private route: ActivatedRoute, private heroService: HeroService, private location: Location) {}
 
